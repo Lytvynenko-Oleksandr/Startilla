@@ -39,11 +39,22 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 1280px;
-    border: 1px solid teal;
+    /* border: 1px solid teal; */
 }
 
 .container-color {
     background-color: var(--background-color);
+}
+
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    z-index: 9999;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .nav-menu {
@@ -143,6 +154,7 @@ a {
     text-align: center;
     width: 1010px;
     margin-bottom: 50px;
+    padding-top: 180px;
 }
 
 .title-artefacts {
@@ -296,7 +308,7 @@ a {
 .faq-list {
     margin-left: 80px;
     margin-right: 116px;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .faq-list .item:not(:last-child) {
@@ -345,7 +357,6 @@ a {
     font-size: 48px;
     line-height: 1.5;
     width: 524px;
-    margin-left: 80px;
     margin-bottom: 20px;
 }
 
@@ -354,7 +365,6 @@ a {
     font-size: 24px;
     line-height: 1.5;
     width: 524px;
-    margin-left: 80px;
     margin-right: 232px;
 }
 
@@ -390,4 +400,52 @@ a {
     color: #FFFFFF;
     margin-right: 188px;
     border: none;
+}
+
+.footer {
+    padding-bottom: 75px;
+}
+
+.logo-footer {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.2;
+    margin-left: 13px;
+}
+
+.footer-text {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 80px;
+}
+
+.footer-about-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5
+}
+
+.footer-about {
+    display: flex;
+    align-items: center;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+    margin-left: 330px;
+}
+
+.about-startilla {
+    margin-right: 392px;
+}
+
+.about-terms {
+    margin-right: 38px;
+}
+
+.footer-list .item:not(:last-child) {
+    margin-right: 16px;
 }
