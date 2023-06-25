@@ -46,6 +46,49 @@ a {
     background-color: var(--background-color);
 }
 
+.overlya {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+
+.overlya::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    width: 45%;
+    height: 45%;
+    background-image: url(./images/hero_@1x.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: rotate(15deg);
+    z-index: -1;
+}
+
+.overlya-artefacts {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+
+.overlya-artefacts::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: -1%;
+    width: 40%;
+    height: 70%;
+    background-image: url(./images/artefacts_@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
 .page-header {
     position: fixed;
     top: 0;
@@ -56,6 +99,7 @@ a {
     padding-top: 8px;
     padding-bottom: 8px;
 }
+
 
 .nav-menu {
     display: flex;
@@ -164,6 +208,7 @@ a {
     margin-right: auto;
     width: 740px;
     margin-bottom: 80px;
+    padding-top: 160px;
 }
 
 .artefacts-list {
